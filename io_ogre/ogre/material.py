@@ -283,7 +283,7 @@ class OgreMaterialGenerator(object):
             return
 
         origin_filepath = util.texture_image_path(slot.texture)
-        if origin_filepath == None:
+        if not origin_filepath:
             return
 
         tmp_filepath = None
